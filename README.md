@@ -14,7 +14,7 @@ The reliable integration of offshore wind power into the energy matrix of an FPS
 
 ## Features
 
-- **State-of-the-Art Forecasting:** Implements and compares over 15 models, with the proposed **CEEMDAN-EWT-TFT Aggregator** achieving a MAPE of **1.79%** (t+10 min).
+- **State-of-the-Art Forecasting:** Implements and compares 17 models, with the proposed **CEEMDAN-EWT-TFT Aggregator** achieving a MAPE of **1.79%** (t+10 min).
 - **Probabilistic Predictions:** Generates prediction intervals (e.g., 80% confidence) essential for risk assessment.
 - **Interactive Dashboard:** A web-based tool built with Streamlit for real-time simulation, model comparison, and operational analysis.
 - **Risk Calibration:** Features a "P10 Safety Factor" to allow operators to tune the system's risk aversion.
