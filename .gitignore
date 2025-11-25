@@ -1,0 +1,17 @@
+# Arquivo: .gitignore
+
+# Pastas de cache e sistema
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
+
+# Arquivos de sistema do Windows
+*.Zone.Identifier
+
+# Modelos salvos e datasets (geralmente grandes)
+saved_models/
+dataset/
+
+# Se você tiver uma pasta para ambientes virtuais
+venv/
+.env
