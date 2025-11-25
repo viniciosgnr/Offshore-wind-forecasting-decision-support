@@ -2,7 +2,7 @@
 
 ## Master's Thesis Project
 
-This repository contains the source code and models developed for the Master's thesis titled: **"[Your Thesis Title Here]"**. The project focuses on developing a high-accuracy, probabilistic forecasting system for offshore wind power and integrating it into a decision support dashboard to enhance the operational efficiency and safety of a Floating Production, Storage and Offloading (FPSO) unit.
+This repository contains the source code and models developed for the Master's thesis titled: **"Short-Term Offshore Wind Power Forecasting for FPSO Operational Support using Hybrid Deep Learning Models and LLM-Powered Agents"**. The project focuses on developing a high-accuracy, probabilistic forecasting system for offshore wind power and integrating it into a decision support dashboard to enhance the operational efficiency and safety of a Floating Production, Storage and Offloading (FPSO) unit.
 
 ---
 
@@ -53,30 +53,55 @@ To run the Decision Support Dashboard on your local machine, please follow these
 
 First, clone the repository. If you are using Git LFS, the large dataset file will be downloaded automatically.
 
-bash
-# Clone the repository
-git clone https://github.com/seu-usuario/seu-repositorio.git
+`git clone https://github.com/viniciosgnr/Offshore-wind-forecasting-decision-support.git`
 
-# Navigate into the project directory
-cd seu-repositorio
+`cd Offshore-wind-forecasting-decision-support`
 
-3. Install Dependencies
+### 3. Install Dependencies
+
 It is highly recommended to use a virtual environment.
-Bash
-# Create a virtual environment
-python -m venv venv
 
-# Activate the environment
-# On Linux/macOS:
-source venv/bin/activate
-# On Windows:
-# venv\Scripts\activate
+`python -m venv venv`
 
-# Install all required packages
-pip install -r requirements.txt
-4. Run the Dashboard
+Activate the environment:
+- On Linux/macOS: `source venv/bin/activate`
+- On Windows: `venv\Scripts\activate`
+
+Install all required packages:
+
+`pip install -r requirements.txt`
+
+### 4. Run the Dashboard
+
 Once the dependencies are installed, you can run the Streamlit application.
-Bash
-streamlit run dashboard.py
+
+`streamlit run dashboard.py`
+
 The dashboard should automatically open in your web browser.
- 
+
+---
+
+## Key Results
+
+The proposed **CEEMDAN-EWT-TFT Aggregator** model was affirmed as the superior architecture, balancing near-optimal accuracy with crucial practical advantages. The application of a risk-calibrated strategy demonstrated significant economic and operational benefits:
+
+| Metric                 | Without Safety Factor | With 0.65 Safety Factor | Improvement |
+| ---------------------- | --------------------- | ----------------------- | ----------- |
+| Blackout Events        | 47                    | **3**                   | **-93.6%**  |
+| **Total Cost (USD )**   | **$5,023,166.67**     | **$677,833.33**         | **-86.5%**  |
+
+This highlights that combining an accurate model with a tunable risk mechanism is key to improving operational reliability and economic efficiency.
+
+---
+
+## Citation
+
+If you use this work in your research, please cite it as follows:
+
+`@mastersthesis{MVinicios2025,`
+`  author  = {Marcos Vinicios},`
+`  title   = {Short-Term Offshore Wind Power Forecasting for FPSO Operational Support using Hybrid Deep Learning Models and LLM-Powered Agents},`
+`  school  = {Federal University of Rio de Janeiro (UFRJ), COPPE},`
+`  year    = {2025},`
+`  address = {Rio de Janeiro, Brazil}`
+`}`
