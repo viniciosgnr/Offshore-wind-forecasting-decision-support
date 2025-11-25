@@ -71,14 +71,14 @@ Install all required packages:
 
 `pip install -r requirements.txt`
 
-### 3. Download the Dataset
+### 4. Download the Dataset
 
 The dataset for this project is archived on Zenodo to ensure permanent availability. Download the 44.csv file from Zenodo: https://zenodo.org/records/10958775
 
 Place the downloaded 44.csv file inside the dataset/ folder in the project's root directory. The final path should be: Offshore-wind-forecasting-decision-support/dataset/44.csv.
 
 
-### 4. Run the Dashboard
+### 5. Run the Dashboard
 
 Once the dependencies are installed, you can run the Streamlit application.
 
