@@ -53,39 +53,36 @@ To run the Decision Support Dashboard on your local machine, please follow these
 
 First, clone this repository to your local machine.
 
-git clone https://github.com/viniciosgnr/Offshore-wind-forecasting-decision-support.git
-cd Offshore-wind-forecasting-decision-support
+`git clone https://github.com/viniciosgnr/Offshore-wind-forecasting-decision-support.git`
 
-### 3. Download the Dataset
+`cd Offshore-wind-forecasting-decision-support`
 
-The dataset for this project is archived on Zenodo to ensure permanent availability.
-
-- **Download the `44.csv` file from Zenodo:** https://zenodo.org/records/10958775
-- **Place the downloaded `44.csv` file inside the `dataset/` folder** in the project's root directory.
-
-The final path should be: `Offshore-wind-forecasting-decision-support/dataset/44.csv`.
-
-### 4. Install Dependencies
+### 3. Install Dependencies
 
 It is highly recommended to use a virtual environment.
 
-# Create a virtual environment
-python -m venv venv
+`python -m venv venv`
 
-# Activate the environment
-# On Linux/macOS:
-source venv/bin/activate
-# On Windows:
-# venv\Scripts\activate
+Activate the environment:
+- On Linux/macOS: `source venv/bin/activate`
+- On Windows: `venv\Scripts\activate`
 
-# Install all required packages
-pip install -r requirements.txt
+Install all required packages:
 
-### 5. Run the Dashboard
+`pip install -r requirements.txt`
 
-Once the dataset is in place and the dependencies are installed, you can run the Streamlit application.
+### 3. Download the Dataset
 
-streamlit run dashboard.py
+The dataset for this project is archived on Zenodo to ensure permanent availability. Download the 44.csv file from Zenodo: https://zenodo.org/records/10958775
+
+Place the downloaded 44.csv file inside the dataset/ folder in the project's root directory. The final path should be: Offshore-wind-forecasting-decision-support/dataset/44.csv.
+
+
+### 4. Run the Dashboard
+
+Once the dependencies are installed, you can run the Streamlit application.
+
+`streamlit run dashboard.py`
 
 The dashboard should automatically open in your web browser.
 
@@ -108,10 +105,10 @@ This highlights that combining an accurate model with a tunable risk mechanism i
 
 If you use this work in your research, please cite it as follows:
 
-@mastersthesis{MVinicios2025,
-  author  = {Marcos Vinicios Lima dos Santos},
-  title   = {Short-Term Offshore Wind Power Forecasting for FPSO Operational Support using Hybrid Deep Learning Models and LLM-Powered Agents},
-  school  = {Federal University of Rio de Janeiro (UFRJ), COPPE},
-  year    = {2025},
-  address = {Rio de Janeiro, Brazil}
-}
+`@mastersthesis{mvinicios2025,`
+`  author  = {Marcos Vinicios Lima dos Santos},`
+`  title   = {Short-Term Offshore Wind Power Forecasting for FPSO Operational Support using Hybrid Deep Learning Models and LLM-Powered Agents},`
+`  school  = {Federal University of Rio de Janeiro (UFRJ), COPPE},`
+`  year    = {2025},`
+`  address = {Rio de Janeiro, Brazil}`
+`}`
